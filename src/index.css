@@ -1,0 +1,36 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-background text-dark-text;
+  }
+
+  strong, b {
+    @apply text-dark-accent;
+  }
+}
+
+@layer components {
+  .live-badge {
+    @apply bg-red-600 text-white text-xs font-semibold px-2 py-0.5 rounded;
+  }
+
+  .viewers-badge {
+    @apply bg-black/60 text-white text-xs px-2 py-0.5 rounded;
+  }
+
+  .card-hover {
+    @apply transition-transform hover:-translate-y-1 hover:shadow-md;
+  }
+
+  .btn-primary {
+    @apply bg-dark-accent hover:bg-dark-accent/90 text-dark-background;
+  }
+  
+  .btn-secondary {
+    @apply bg-dark-background/10 hover:bg-dark-background/20 text-dark-background;
+  }
+}
